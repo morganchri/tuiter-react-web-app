@@ -1,0 +1,277 @@
+/*Search*/
+.searchStyle {
+    border-radius: 50px;
+    border-color: darkgray;
+    background: lightgray;
+    border-width: 4px;
+    padding: 3px;
+    padding-left: 30px;
+    width: 80%;
+}
+
+.magStyle{
+    color: darkgray;
+    padding: 5px;
+}
+
+.cogStyle{
+    color: black;
+    padding: 5px;
+}
+
+/*Found this on stackoverflow as a way to get a transparent search*/
+/*https://stackoverflow.com/questions/20573549/make-text-input-box-transparent-should-be-simple*/
+#text-fields-search {
+    background-color:transparent;
+    border-color: transparent;
+    outline: transparent;
+}
+
+.searchPadding {
+    padding: 30px;
+}
+
+.listPadding {
+    padding-left: 10%;
+}
+
+.image-padding {
+    padding: 5px;
+}
+
+.grid-col-right-side {
+    width: 25%;
+    float: right;
+}
+
+.grid-col-ellipsis {
+    width: 10%;
+    float: right;
+}
+
+.grid-col-middle {
+    width: 90%;
+    float: left;
+}
+
+.grid-col-full {
+    width: 100%;
+    float: left;
+}
+
+.grid-col-left-side {
+    width: 10%;
+    float: left;
+}
+
+/*https://www.w3schools.com/howto/howto_css_list_group.asp*/
+.explore-tuit-formatting {
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+    padding: 3px 0 0;
+    font-family: "Lucida Bright", serif;
+
+}
+
+.explore-tuit-section-background {
+    background: white;
+}
+
+/*https://www.w3schools.com/howto/howto_css_image_text.asp*/
+/* Container holding the image and the text */
+.wd-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    collapse: white;
+    font-size: 3em;
+    font-family: "Lucida Bright", serif;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    collapse: white;
+    font-family: "Lucida Bright", serif;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    collapse: white;
+    font-family: "Lucida Bright", serif;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    collapse: white;
+    font-family: "Lucida Bright", serif;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    collapse: white;
+    font-family: "Lucida Bright", serif;
+}
+
+
+/*Bootstrap section*/
+
+.wd-nav-list-group-formatting {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.wd-nav-list-text-formatting {
+    float: left;
+    width: 85%;
+    padding-left: 5px;
+
+}
+
+.wd-tuit-button-format {
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+.wd-sidebar-overall-format {
+    width: auto;
+    padding-top: 10px;
+}
+
+.wd-sidebar-avatar-format {
+    border: 1px lightgray solid;
+    float: left;
+}
+
+.wd-sidebar-name-text-format {
+    text-align: left;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.wd-sidebar-username-text-format {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.wd-sidebar-button-format {
+    margin: 5px 3px 5px 1px;
+    overflow: inherit;
+    white-space: nowrap;
+
+}
+
+.wd-search-bar-format {
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.wd-bootstrap-magStyle{
+    padding: 5px;
+}
+
+.wd-border-bootstrap {
+    border: 1px lightgray solid;
+}
+
+.wd-searchStyle-bootstrap {
+    border-radius: 50px;
+    border: 1px darkgray solid;
+    background: white;
+    padding: 3px;
+    padding-left: 30px;
+    margin-left: 10px;
+}
+
+/*found the bootstrap blue color via google search*/
+/*https://www.google.com/search?q=what+is+the+default+blue+color+for+bootstrap&rlz=1C1MSIM_enUS893US893&oq=what+is+the+default+blue+color+for+bootstrap&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigATIKCAUQIRgWGB0YHtIBCDU0MzVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8*/
+.wd-cogStyle-bootstrap{
+    color: #0D6EFD;
+    padding-left: 10px;
+}
+
+.wd-tabs-formatting {
+    padding: 5px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.wd-image-bootstrap-center {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Bottom left text */
+.wd-bootstrap-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    collapse: white;
+    font-size: 4em;
+}
+
+.wd-bootstrap-list-format {
+    padding-left: 5px;
+    padding-right: 5px;
+    inline-size: max-content;
+    width: fit-content;
+}
+
+.wd-searchbar-formatting {
+    white-space: nowrap;
+}
+
+.wd-grid-col-middle-bootstrap {
+    width: 100%;
+    float: left;
+}
+
+.wb-nav-icon-padding {
+    float: left;
+    width: 15%;
+    padding-top: 5px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.wb-nav-div-inline {
+    display: inline-block;
+}
+
+.wb-tuit-header-format {
+    text-align: left;
+    color: gray;
+    margin-bottom: 0;
+}
+
+.wb-tuit-body-format {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+

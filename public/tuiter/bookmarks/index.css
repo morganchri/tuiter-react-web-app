@@ -1,0 +1,120 @@
+.wd-page-formatting {
+    width: 1000px;
+}
+
+.wd-header-format {
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: black;
+    font-family: "Lucida Bright", serif;
+    display: inline-block;
+    inline-size: 50%;
+    /*border: 1px lightgray solid;*/
+    padding: 12px;
+    height: 100%;
+    width: 1000px;
+    white-space: nowrap;
+}
+
+.wd-tuit-format {
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: black;
+    font-family: "Lucida Bright", serif;
+    inline-size: 100%;
+    height: 600px;
+    width: 1000px;
+}
+
+.wd-rounded-container-top {
+    border-radius: 15px 15px 0 0;
+}
+
+.wd-rounded-container-bottom {
+    border-radius: 0 0 15px 15px;
+}
+
+.wd-tuit-title-padding {
+    margin: 10px 5px;
+}
+
+.wd-tuit-text-padding {
+    margin: 0 5px 10px;
+}
+
+.wd-link-padding {
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.wd-link-text-padding {
+    margin: 15px;
+}
+
+.wd-all-bookmarks-formatting {
+    text-align: left;
+    font-weight: bold;
+}
+
+.wd-grid-col-bookmark-header-middle {
+    width: 60%;
+    text-align: left;
+    float: left;
+}
+
+.wd-grid-row {
+    clear: both;
+
+}
+
+.wd-grid-border {
+    border: 1px lightgray solid;
+    /*padding: 100%;*/
+    /*inline-size: 50%;*/
+}
+
+.wd-tuit-grid-border {
+    border-bottom: 1px lightgray solid;
+    /*padding: 100%;*/
+    /*inline-size: 50%;*/
+}
+
+.wd-avatar-format {
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.wd-tuit-box {
+    margin-top: 0;
+    /*border: 1px lightgray solid;*/
+    display: inline-block;
+    inline-size: 100%;
+    overflow-wrap: normal;
+}
+
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_text/Wrapping_breaking_text*/
+.wd-tuit-link-box {
+    inline-size: 100%;
+    overflow-wrap: normal;
+    padding: 0;
+}
+
+.wd-icon-float {
+    float: left;
+    margin: 15px;
+    width: 15%;
+}
+
+.wd-ellipses-tuit-float {
+    float: right;
+    text-align: right;
+    margin: 15px;
+    width: 20%;
+}
+
+.wd-icons-nowrap {
+    white-space:nowrap;
+}

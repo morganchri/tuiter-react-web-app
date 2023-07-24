@@ -1,0 +1,33 @@
+[
+  {
+    "_id": 123,
+    "userName": "Staples",
+    "handle": "staples",
+    "avatarIcon": "staples.png"
+  },
+  {
+    "_id": 234,
+    "userName": "Akamai",
+    "handle": "akamai",
+    "avatarIcon": "akamai.png"
+  },
+  {
+    "_id": 345,
+    "userName": "Northeastern",
+    "handle": "neu",
+    "avatarIcon": "northeastern.jpg"
+  },
+  {
+    "_id": 456,
+    "userName": "Kramerica",
+    "handle": "kramerica",
+    "avatarIcon": "kramerica-industries.png"
+  },
+  {
+    "_id": 567,
+    "userName": "Java",
+    "handle": "java",
+    "avatarIcon": "JavaCupLogo800x800.png"
+  }
+]
+

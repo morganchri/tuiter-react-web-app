@@ -1,0 +1,10 @@
+[{ "_id": 123, "topic": "Akamai", "userName": "Akamai",
+  "title": "Akamai announces earnings this week",
+  "time": "2h",   "image": "akamai.png" },
+  { "_id": 234, "topic": "Retail",   "userName": "Staples",
+    "title": "Staples announces the closure of several of its Staples Studio stores amid continuing financial trouble in the retail space due to the economic changes of Covid-19",
+    "time": "2h",   "image": "staples.png" },
+  { "_id": 345, "topic": "College Tuition",  "userName": "Northeastern",
+    "title": "Northeastern University announces 200% increase in tuition due to the rising costs of college coaching staff",
+    "time": "4d",   "image": "northeastern.jpg" }
+]

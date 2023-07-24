@@ -1,0 +1,61 @@
+.grid-row {
+    clear: both;
+}
+
+.grid-col-left-sidebar {
+    width: 10%;
+    float: left;
+}
+.grid-col-main-content {
+    width: 70%;
+    float: left;
+}
+
+.grid-col-cross-main-content {
+    width: 90%;
+    float: left;
+}
+.grid-col-right-sidebar {
+    width: 20%;
+    float: left;
+}
+
+/*https://stackoverflow.com/questions/32322775/how-to-remove-a-list-item-border-in-bootstrap-list-group*/
+.borderless-li {
+    border-top: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+    border-bottom: 0 none;
+}
+
+.wd-list-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.wd-list-group-item{
+    min-width: 200px;
+}
+
+.underline-style {
+    text-decoration-color:dodgerblue;
+    text-underline-style: thick;
+    text-underline-offset: 15px;
+}
+
+.padding-overall {
+    padding: 10px;
+}
+
+.overall-border {
+    border: 1px solid lightgray;
+}
+
+.selector-formatting {
+    list-style-type: none;
+    text-align: center;
+    font-family: "Lucida Bright", serif;
+}
+
