@@ -25,7 +25,7 @@ const NavigationSidebar = () => {
                                <div>
                                    {link[1]}
 
-                                   {" " + link[0]}
+                                   {"  " + link[0]}
                                </div>
                            </Link>
             )}
