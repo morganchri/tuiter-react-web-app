@@ -3,8 +3,14 @@
   "time": "2h",   "image": "akamai.png" },
   { "_id": 234, "topic": "Retail",   "userName": "Staples",
     "title": "Staples announces the closure of several of its Staples Studio stores amid continuing financial trouble in the retail space due to the economic changes of Covid-19",
-    "time": "2h",   "image": "staples.png" },
+    "time": "5h",   "image": "staples.png" },
   { "_id": 345, "topic": "College Tuition",  "userName": "Northeastern",
     "title": "Northeastern University announces 200% increase in tuition due to the rising costs of college coaching staff",
-    "time": "4d",   "image": "northeastern.jpg" }
+    "time": "4d",   "image": "northeastern.jpg" },
+  { "_id": 456, "topic": "Programming",  "userName": "Java",
+    "title": "Java to remove object oriented design and become a purely functional programming language in a shocking move",
+    "time": "7d",   "image": "JavaCupLogo800x800.png" },
+  { "_id": 567, "topic": "Seinfeld",  "userName": "Kramerica",
+    "title": "Seinfeld creator Jerry Seinfeld establishes Kramerica Industries as a company for his brand",
+    "time": "8d",   "image": "kramerica-industries.png" }
 ]
