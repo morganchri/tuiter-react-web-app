@@ -6,7 +6,7 @@ import WhatsHappening from "./whats-happening"
 function HomeScreen() {
 	return (
 		<div>
-			<h2>Home</h2>
+			<h1>Home</h1>
 			<WhatsHappening/>
 			<TuitsList/>
 		</div>
