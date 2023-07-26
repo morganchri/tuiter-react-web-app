@@ -1,0 +1,12 @@
+.tuiter-avatar {
+    border-radius: 50%;
+    box-shadow: 1px 1px;
+}
+
+.liked-format {
+    color:red;
+}
+
+.unliked-format {
+    color: black
+}

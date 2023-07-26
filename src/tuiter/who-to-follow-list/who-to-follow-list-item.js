@@ -11,7 +11,7 @@ const WhoToFollowListItem = (
         <li className="list-group-item">
             <div className="row">
                 <div className="col-2">
-                    <img className="rounded-circle" height={48} src={`/images/${who.avatarIcon}`} alt="avatar"/>
+                    <img className="rounded-circle wd-avatar-padding" height={48} src={`/images/${who.avatarIcon}`} alt="avatar"/>
                 </div>
                 <div className="col-8 wd-who-to-follow-text-padding">
                     <div className="fw-bold"> &nbsp; {who.userName}  <i className="fas fa-check-circle"></i></div>
