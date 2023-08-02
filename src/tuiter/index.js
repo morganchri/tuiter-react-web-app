@@ -4,7 +4,7 @@ import NavigationSidebar from "./navigation-sidebar";
 import HomeScreen from "./tuits/index";
 import ExploreScreen from "./explore-screen/index";
 import BookmarksScreen from "./navigation-sidebar/bookmarks-screen";
-import ProfileScreen from "./navigation-sidebar/profile-screen";
+import Profile from "./navigation-sidebar/profile-screen";
 import WhoToFollowList from "./who-to-follow-list";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
