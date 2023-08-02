@@ -2,7 +2,8 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TuitStats from "./TuitStats"
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer"
+// import {deleteTuit} from "../reducers/tuits-reducer"
+import {deleteTuitThunk} from "../services/tuits-thunks";
 import {AiOutlineClose} from "react-icons/ai"
 import "./index.css"
 
@@ -26,7 +27,9 @@ const TuitItem = (
 ) => {
 	const dispatch = useDispatch();
 	const deleteTuitHandler = (id) => {
-		dispatch(deleteTuit(id));
+		// dispatch(deleteTuit(id));
+		dispatch(deleteTuitThunk(id));
+
 	}
 	return(
 		<li className="list-group-item">

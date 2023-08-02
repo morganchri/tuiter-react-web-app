@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import {addLikes, subtractLikes} from "../reducers/tuits-reducer"
+import { updateTuitThunk } from "../services/tuits-thunks";
 
 const TuitStats = (
 	{
@@ -44,9 +45,17 @@ const TuitStats = (
 			<div className={"col-3"}>
 				{/*Conditional formatting in the className*/}
 				{/*https://stackoverflow.com/questions/30533171/react-js-conditionally-applying-class-attributes*/}
-				<i id={"likeButton"} className={tuit.liked ? "fas fa-heart fa-lg liked-format" : "far fa-heart fa-lg"} onClick={() => {
-					likeClick(tuit._id, tuit)
-				}}></i>
+				{/*<i id={"likeButton"} className={tuit.liked ? "fas fa-heart fa-lg liked-format" : "far fa-heart fa-lg"} onClick={() => {*/}
+				{/*	likeClick(tuit._id, tuit)*/}
+				{/*}}></i>*/}
+
+				<FaHeart
+					className="text-danger"
+					onClick={() =>
+						dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
+					}
+				/>
+
 				&nbsp; {tuit.likes}
 			</div>
 			<div className={"col-3"}>
@@ -55,9 +64,5 @@ const TuitStats = (
 		</div>
 	)
 };
-
-
-
-
 
 export default TuitStats;
