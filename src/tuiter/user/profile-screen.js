@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import { profileThunk, logoutThunk, updateUserThunk }
     from "../services/auth-thunks";
-function Profile() {
+function ProfileScreen() {
     const { currentUser } = useSelector((state) => state.user);
     const [ profile, setProfile ] = useState(currentUser);
     const dispatch = useDispatch();
@@ -48,4 +48,4 @@ function Profile() {
         <button onClick={save}>Save  </button>
     </div>);
 }
-export default Profile;
+export default ProfileScreen;

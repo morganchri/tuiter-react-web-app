@@ -4,7 +4,7 @@ import NavigationSidebar from "./navigation-sidebar";
 import HomeScreen from "./tuits/index";
 import ExploreScreen from "./explore-screen/index";
 import BookmarksScreen from "./navigation-sidebar/bookmarks-screen";
-import Profile from "./navigation-sidebar/profile-screen";
+// import ProfileScreen from "./navigation-sidebar/profile-screen";
 import WhoToFollowList from "./who-to-follow-list";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
@@ -38,7 +38,7 @@ function Tuiter() {
                             <Route path="/messages" element={<h1>Messages</h1>}/>
                             <Route path="/bookmarks" element={<BookmarksScreen/>}/>
                             <Route path="/lists" element={<h1>Lists</h1>}/>
-                            <Route path="/profile" element={<ProfileScreen/>}/>
+                            {/*<Route path="/profile" element={<ProfileScreen/>}/>*/}
                             <Route path="/more" element={<h1>More</h1>}/>
                         </Routes>
                     </div>
