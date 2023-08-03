@@ -23,9 +23,6 @@ const NavigationSidebar = () => {
 
     return (
         <div className="list-group">
-            {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
-            {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
-            { currentUser && <Link className="list-group" to="/tuiter/profile"> Profile </Link>}
             {linkIcons.map((link) =>
                            <Link to={`${link[0]}`} className={`list-group-item text-capitalize ${active === link[0] ? "active" : ""}`}>
                                <div>
@@ -35,7 +32,9 @@ const NavigationSidebar = () => {
                                </div>
                            </Link>
             )}
-
+            {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
+            {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
+            { currentUser && <Link className="list-group" to="/tuiter/profile"> Profile </Link>}
         </div>
     );
 };
