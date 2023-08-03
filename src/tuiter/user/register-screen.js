@@ -10,7 +10,7 @@ function RegisterScreen() {
 	const handleRegister = async () => {
 		try {
 			await dispatch(registerThunk({ username, password }));
-			navigate("/tuiter/home");
+			navigate("/tuiter/profile");
 		} catch (e) {
 			alert(e);
 		}
@@ -21,14 +21,12 @@ function RegisterScreen() {
 			<div className="mt-2">
 				<label>Username</label>
 				<input className="form-control" type="text" value={username}
-					   onChange={(event) =>
-						   setUsername(event.target.value)}/>
+					   onChange={(event) => setUsername(event.target.value)}/>
 			</div>
 			<div className="mt-2">
 				<label>Password</label>
 				<input className="form-control" type="password" value={password}
-					   onChange={(event) =>
-						   setPassword(event.target.value)}/>
+					   onChange={(event) => setPassword(event.target.value)}/>
 			</div>
 			<button className="btn btn-primary mt-2"
 					onClick={handleRegister}>
