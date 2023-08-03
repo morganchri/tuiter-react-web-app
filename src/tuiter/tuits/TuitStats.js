@@ -49,12 +49,16 @@ const TuitStats = (
 				{/*	likeClick(tuit._id, tuit)*/}
 				{/*}}></i>*/}
 
-				<FaHeart
-					className="text-danger"
-					onClick={() =>
-						dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
-					}
-				/>
+				<i id={"likeButton"} className={tuit.liked ? "fas fa-heart fa-lg liked-format" : "far fa-heart fa-lg"} onClick={() => {
+					dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
+				}}></i>
+
+				{/*<FaHeart*/}
+				{/*	className="text-danger"*/}
+				{/*	onClick={() =>*/}
+				{/*		dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))*/}
+				{/*	}*/}
+				{/*/>*/}
 
 				&nbsp; {tuit.likes}
 			</div>
