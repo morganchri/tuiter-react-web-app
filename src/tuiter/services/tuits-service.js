@@ -1,5 +1,5 @@
 import axios from 'axios';
-// const TUITS_API = 'https://tuiter-node-server-app-cs5610-s232.onrender.com/';
+// const TUITS_API = 'https://tuiter-node-server-app-cs5610-s232.onrender.com/api/tuits';
 
 const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE}/tuits`;

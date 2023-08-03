@@ -16,6 +16,7 @@ const TuitStats = (
 			replies: 123,
 			retuits: 432,
 			likes: 2345,
+			dislikes: 666,
 			handle: "@neu",
 			tuit: "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
 		}
@@ -61,6 +62,13 @@ const TuitStats = (
 				{/*/>*/}
 
 				&nbsp; {tuit.likes}
+
+
+				<i className={tuit.liked ? "fas fa-thumbs-down fa-lg disliked-format" : "far fa-thumbs-down fa-lg"} onClick={() => {
+					dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1 }))
+				}}></i>
+
+				&nbsp; {tuit.dislikes}
 			</div>
 			<div className={"col-3"}>
 				<i className="far fa-share-square fa-lg"></i>

@@ -10,3 +10,11 @@
 .unliked-format {
     color: black
 }
+
+.disliked-format {
+    color: blueviolet;
+}
+
+.undisliked-format {
+    color: black
+}
