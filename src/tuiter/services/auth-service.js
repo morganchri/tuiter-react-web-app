@@ -1,5 +1,5 @@
 import axios from "axios";
-import "dotenv/config";
+// import "dotenv/config";
 
 const SERVER_API_URL = process.env.REACT_APP_SERVER_API_URL;
 // const SERVER_API_URL = process.env.REACT_APP_API_BASE;
