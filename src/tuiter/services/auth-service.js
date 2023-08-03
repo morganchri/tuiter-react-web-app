@@ -26,5 +26,5 @@ export const updateUser = async (user) => {
 };
 export const registerThunk = async ({ username, password }) => {
 	const response = await api.post(`${USERS_URL}/${username}`, {username, password});
-	return respose;
+	return response;
 }
