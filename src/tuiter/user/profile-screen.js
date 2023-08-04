@@ -16,9 +16,9 @@ function ProfileScreen() {
         };
         loadProfile();
     }, []);
+    console.log(profile)
     return (<div>
         <h1>Profile Screen</h1>
-        
         {profile && (<div>
                 <div>
                     <label>First Name</label>
