@@ -8,16 +8,13 @@ const NavigationSidebar = () => {
     const { currentUser } = useSelector((state) => state.user);
     const { pathname } = useLocation();
     const [ignore, tuiter, active] = pathname.split("/");
-    const links = ["login", "register", "profile", "home",     "explore",   "notifications", "messages", "bookmarks", "lists",  "more"];
+    const links = ["home", "explore", "notifications", "messages", "bookmarks", "lists", "more"];
     const icons = [<i className="fa fa-home"></i>,
-                   <i className="fas fa-sign-in-alt"></i>,
-                   <i className="fas fa-sign-in-alt"></i>,
                    <i className="fa fa-hashtag wd-icon-buffer"></i>,
                    <i className="fa fa-bell wd-icon-buffer"></i>,
                    <i className="fa fa-envelope wd-icon-buffer"></i>,
                    <i className="fa fa-bookmark wd-icon-buffer"></i>,
                    <i className="fa fa-list wd-icon-buffer"></i>,
-                   <i className="fa fa-user wd-icon-buffer"></i>,
                    <i className="fas fa-circle wd-icon-buffer"></i>]
 
     // https://stackoverflow.com/questions/32937181/javascript-es6-map-multiple-arrays
@@ -34,9 +31,10 @@ const NavigationSidebar = () => {
                                </div>
                            </Link>
             )}
-            {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
-            {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
-            { currentUser && <Link className="list-group" to="/tuiter/profile"> Profile </Link>}
+            {/*<i className="fa fa-user wd-icon-buffer"></i>,*/}
+            {!currentUser && <Link className="list-group-item fa fa-user wd-icon-buffer" to="/tuiter/login">   Login   </Link>}
+            {!currentUser && <Link className="list-group-item" to="/tuiter/register">Register</Link>}
+            { currentUser && <Link className="list-group-item" to="/tuiter/profile"> Profile </Link>}
         </div>
     );
 };
