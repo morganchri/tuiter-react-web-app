@@ -8,14 +8,16 @@ const NavigationSidebar = () => {
     const { currentUser } = useSelector((state) => state.user);
     const { pathname } = useLocation();
     const [ignore, tuiter, active] = pathname.split("/");
-    const links = ["home",     "explore",   "notifications", "messages", "bookmarks", "lists",  "more"];
+    const links = ["login", "register", "profile", "home",     "explore",   "notifications", "messages", "bookmarks", "lists",  "more"];
     const icons = [<i className="fa fa-home"></i>,
+                   <i className="fas fa-sign-in-alt"></i>,
+                   <i className="fas fa-sign-in-alt"></i>,
                    <i className="fa fa-hashtag wd-icon-buffer"></i>,
                    <i className="fa fa-bell wd-icon-buffer"></i>,
                    <i className="fa fa-envelope wd-icon-buffer"></i>,
                    <i className="fa fa-bookmark wd-icon-buffer"></i>,
                    <i className="fa fa-list wd-icon-buffer"></i>,
-                   // <i className="fa fa-user wd-icon-buffer"></i>,
+                   <i className="fa fa-user wd-icon-buffer"></i>,
                    <i className="fas fa-circle wd-icon-buffer"></i>]
 
     // https://stackoverflow.com/questions/32937181/javascript-es6-map-multiple-arrays
