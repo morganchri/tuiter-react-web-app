@@ -17,6 +17,7 @@ export const login = async ({ username, password }) => {
 
 export const logout = async () => {
 	const response = await api.post(`${USERS_URL}/logout`);
+	console.log(response)
 	return response.data;
 };
 export const profile = async () => {
