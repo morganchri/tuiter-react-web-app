@@ -6,8 +6,7 @@ export const loginThunk = createAsyncThunk(
 	"user/login", async (username, password) => {
 		const user = await authService.login(username, password);
 		return user;
-	}
-);
+	});
 
 export const profileThunk = createAsyncThunk(
 	"auth/profile", async () => {
