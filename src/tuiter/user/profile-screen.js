@@ -16,7 +16,7 @@ function ProfileScreen() {
             const { payload } = await dispatch(profileThunk());
             setProfile(payload);
         };
-        loadProfile();
+        await loadProfile();
     }, []);
     console.log(profile)
     return (<div>
