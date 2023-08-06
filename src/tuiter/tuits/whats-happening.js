@@ -20,10 +20,12 @@ const WhatsHappening = () => {
 			tuit: whatsHappening
 		}
 		// dispatch(createTuit(newTuit));
-		dispatch(createTuitThunk(newTuit));
-		setWhatsHappening("");
-
-		console.log(whatsHappening);
+		if (whatsHappening.length > 0) {
+			dispatch(createTuitThunk(newTuit));
+			setWhatsHappening("");
+			console.log(whatsHappening);
+		}
+		
 	}
 	return (
 		<div className="row">

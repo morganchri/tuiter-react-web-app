@@ -4,8 +4,8 @@ import TuitStats from "./TuitStats"
 import {useDispatch} from "react-redux";
 // import {deleteTuit} from "../reducers/tuits-reducer"
 import {deleteTuitThunk} from "../services/tuits-thunks";
-import {AiOutlineClose} from "react-icons/ai"
-import "./index.css"
+import {AiOutlineClose} from "react-icons/ai";
+import "./index.css";
 
 const TuitItem = (
 	{
@@ -29,7 +29,6 @@ const TuitItem = (
 	const deleteTuitHandler = (id) => {
 		// dispatch(deleteTuit(id));
 		dispatch(deleteTuitThunk(id));
-
 	}
 	return(
 		<li className="list-group-item">
@@ -39,10 +38,10 @@ const TuitItem = (
 						 alt={"image"}/>
 				</div>
 				<div className="col-10">
-					<div>{tuit.userName} <i className="fas fa-check-circle"></i> {tuit.handle} . {tuit.time}</div>
-					<div className="fw-bolder">{tuit.tuit}</div>
+					<div className="fw-bolder">{tuit.username} <i className="fas fa-check-circle "></i> {tuit.handle} . {tuit.time}</div>
+					<div className="">{tuit.tuit}</div>
 					<AiOutlineClose className="bi bi-x-lg float-end"
-					   onClick={() => deleteTuitHandler(tuit._id)}></AiOutlineClose>
+					   onClick={() => dispatch(deleteTuitThunk(tuit._id))}></AiOutlineClose>
 					<TuitStats key={tuit._id} tuit={tuit}/>
 				</div>
 			</div>

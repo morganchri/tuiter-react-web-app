@@ -12,7 +12,8 @@ const TuitStats = (
 			title: "Northeastern University announces 200% increase in tuition due to the rising costs of college coaching staff",
 			time: "4d",
 			image: "northeastern.jpg",
-			liked: true,
+			liked: false,
+			disliked: false,
 			replies: 123,
 			retuits: 432,
 			likes: 2345,
@@ -24,53 +25,42 @@ const TuitStats = (
 ) => {
 
 	const dispatch = useDispatch();
-	const likeClick = (id, tuit) => {
-			if (tuit.liked === true) {
-				dispatch(subtractLikes(id))
-			} else {
-				dispatch(addLikes(id))
-			}
-		}
+	// const likeClick = (id, tuit) => {
+	// 		if (tuit.liked === true) {
+	// 			dispatch(subtractLikes(id))
+	// 		} else {
+	// 			dispatch(addLikes(id))
+	// 		}
+	// 	}
 
 
 	return (
 		<div className={"row"}>
-			<div className={"col-3"}>
+			<div className={"col-2"}>
 				<i className="far fa-comment fa-lg"></i>
 				&nbsp; {tuit.replies}
 			</div>
-			<div className={"col-3"}>
+			<div className={"col-2"}>
 				<i className="fa fa-retweet fa-lg"></i>
 				&nbsp; {tuit.retuits}
 			</div>
-			<div className={"col-3"}>
-				{/*Conditional formatting in the className*/}
-				{/*https://stackoverflow.com/questions/30533171/react-js-conditionally-applying-class-attributes*/}
-				{/*<i id={"likeButton"} className={tuit.liked ? "fas fa-heart fa-lg liked-format" : "far fa-heart fa-lg"} onClick={() => {*/}
-				{/*	likeClick(tuit._id, tuit)*/}
-				{/*}}></i>*/}
+			<div className={"col-2"}>
 
-				<i id={"likeButton"} className={tuit.liked ? "fas fa-heart fa-lg liked-format" : "far fa-heart fa-lg"} onClick={() => {
-					dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
+				<i className={tuit.liked ? "fas fa-heart fa-lg liked-format" : "far fa-heart fa-lg"} onClick={() => {
+					tuit.liked ? dispatch(updateTuitThunk({...tuit, likes: tuit.likes - 1, liked: false})) : dispatch(updateTuitThunk({...tuit, likes: tuit.likes + 1, liked: true}));
 				}}></i>
-
-				{/*<FaHeart*/}
-				{/*	className="text-danger"*/}
-				{/*	onClick={() =>*/}
-				{/*		dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))*/}
-				{/*	}*/}
-				{/*/>*/}
 
 				&nbsp; {tuit.likes}
 
-
-				<i className={tuit.liked ? "fas fa-thumbs-down fa-lg disliked-format" : "far fa-thumbs-down fa-lg"} onClick={() => {
-					dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1 }))
+			</div>
+			<div className={"col-2"}>
+				<i className={tuit.disliked ? "fas fa-thumbs-down fa-lg disliked-format" : "far fa-thumbs-down fa-lg"} onClick={() => {
+					tuit.disliked ? dispatch(updateTuitThunk({...tuit, dislikes: tuit.dislikes - 1, disliked: false})) : dispatch(updateTuitThunk({...tuit, dislikes: tuit.dislikes + 1, disliked: true}));
 				}}></i>
 
 				&nbsp; {tuit.dislikes}
 			</div>
-			<div className={"col-3"}>
+			<div className={"col-2"}>
 				<i className="far fa-share-square fa-lg"></i>
 			</div>
 		</div>
