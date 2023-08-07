@@ -41,7 +41,7 @@ const TuitItem = (
 					<div className="fw-bolder">{tuit.username} <i className="fas fa-check-circle "></i> {tuit.handle} . {tuit.time}</div>
 					<div className="">{tuit.tuit}</div>
 					<AiOutlineClose className="bi bi-x-lg float-end"
-					   onClick={() => dispatch(deleteTuitThunk(tuit))}></AiOutlineClose>
+					   onClick={() => dispatch(deleteTuitThunk(tuit._id))}></AiOutlineClose>
 					<TuitStats key={tuit._id} tuit={tuit}/>
 				</div>
 			</div>
