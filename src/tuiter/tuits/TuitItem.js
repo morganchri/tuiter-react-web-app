@@ -1,13 +1,14 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TuitStats from "./TuitStats"
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 // import {deleteTuit} from "../reducers/tuits-reducer"
 import {deleteTuitThunk} from "../services/tuits-thunks";
 import {AiOutlineClose} from "react-icons/ai";
 import "./index.css";
 
 const TuitItem = (
+
 	{
 		tuit = {
 			_id: 123,
@@ -25,11 +26,13 @@ const TuitItem = (
 		}
 	}
 ) => {
+	const { currentUser } = useSelector((state) => state.user);
 	const dispatch = useDispatch();
 	const deleteTuitHandler = (id) => {
 		// dispatch(deleteTuit(id));
 		dispatch(deleteTuitThunk(id));
 	}
+	let time = "now"
 	return(
 		<li className="list-group-item">
 			<div className="row">
@@ -38,7 +41,7 @@ const TuitItem = (
 						 alt={"image"}/>
 				</div>
 				<div className="col-10">
-					<div className="fw-bolder">{tuit.username} <i className="fas fa-check-circle "></i> {tuit.handle} . {tuit.time}</div>
+					<div className="fw-bolder">{currentUser.username} <i className="fas fa-check-circle "></i> @{currentUser.username} . {time}</div>
 					<div className="">{tuit.tuit}</div>
 					<AiOutlineClose className="bi bi-x-lg float-end"
 					   onClick={() => dispatch(deleteTuitThunk(tuit._id))}></AiOutlineClose>

@@ -20,18 +20,18 @@ export const logout = async () => {
 };
 
 export const profile = async () => {
-	const response = await api.post(`${USERS_URL}/profile`);
-	return response;
+	return await api.post(`${USERS_URL}/profile`);
 };
 
 
 export const updateUser = async (user) => {
 	const response = await api.put(`${USERS_URL}/${user._id}`, user);
+	console.log(response.data)
 	return response.data;
 };
 
 
-export const registerUser = async ({ username, password, _id }) => {
-	const response = await api.post(`${USERS_URL}/register`, {username, password, _id: _id});
+export const registerUser = async ({ username, password}) => {
+	const response = await api.post(`${USERS_URL}/register`, {username, password});
 	return response.data;
 };
